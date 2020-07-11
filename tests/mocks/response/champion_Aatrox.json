@@ -1,0 +1,54 @@
+{
+    "data": {
+      "Aatrox": {
+        "blurb": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find...",
+        "id": "Aatrox",
+        "image": {
+          "full": "Aatrox.png",
+          "group": "champion",
+          "h": 48,
+          "sprite": "champion0.png",
+          "w": 48,
+          "x": 0,
+          "y": 0
+        },
+        "info": {
+          "attack": 8,
+          "defense": 4,
+          "difficulty": 4,
+          "magic": 3
+        },
+        "key": "266",
+        "name": "Aatrox",
+        "partype": "Blood Well",
+        "stats": {
+          "armor": 38,
+          "armorperlevel": 3.25,
+          "attackdamage": 60,
+          "attackdamageperlevel": 5,
+          "attackrange": 175,
+          "attackspeed": 0.651,
+          "attackspeedperlevel": 2.5,
+          "crit": 0,
+          "critperlevel": 0,
+          "hp": 580,
+          "hpperlevel": 90,
+          "hpregen": 3,
+          "hpregenperlevel": 1,
+          "movespeed": 345,
+          "mp": 0,
+          "mpperlevel": 0,
+          "mpregen": 0,
+          "mpregenperlevel": 0,
+          "spellblock": 32.1,
+          "spellblockperlevel": 1.25
+        },
+        "tags": [
+          "Fighter",
+          "Tank"
+        ],
+        "title": "the Darkin Blade",
+        "version": "10.14.1"
+      }
+    }
+  }
