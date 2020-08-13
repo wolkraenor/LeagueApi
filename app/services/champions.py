@@ -22,18 +22,3 @@ class ChampionsService():
                 champion = {name: data[x]}
 
         return champion
-
-                
-
-    
-
-
-
-
-    
-
-"""
-champions = ChampionsService()
-champions.store()
-"""
-#set PYTHONPATH=C:\laragon\www\Proyecto 2

@@ -36,11 +36,3 @@ class ItemsService():
         items = self.__parse_data(data)
         item = self.__parse_items_by_name(items, name)
         return item
-
-
-
-
-
-
-
-
