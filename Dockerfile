@@ -9,4 +9,4 @@ RUN chmod +x /entrypoint.sh
 RUN pip install -r /requirements.txt
 
 ENTRYPOINT ["sh"]
-CMD ["/entrypoint.sh", -sharedDb]
+CMD ["/entrypoint.sh"]

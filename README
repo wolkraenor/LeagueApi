@@ -1,0 +1,24 @@
+Requirements:
+
+    python_version = "3.x"
+
+Setup:
+
+    Up: 
+        PATH/docker-compose up
+    
+    Down:
+        PATH/docker-compose down
+
+Endpoints:
+
+    GET /champions ->  list of all champions
+    GET/champions/{name} -> information of determinated champion
+    GET/champions/{name}/asset/{id} -> info by category
+    
+    Params:
+    -sort ascendent or descendent order
+    -q  parcial search
+    -offset  
+    -limit  
+
