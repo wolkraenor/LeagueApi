@@ -1,10 +1,27 @@
 from flask import Flask, request, jsonify, render_template
-from app.settings import APP_NAME, APP_VERSION, DEBUG
+from flask_sqlalchemy import SQLAlchemy  
+from app.settings import (APP_NAME, APP_VERSION, DEBUG, MYSQL_BASE, MYSQL_HOST,
+                          MYSQL_PASSWORD, MYSQL_USER) 
 from app.services.champions import ChampionsService
 from app.services.items import ItemsService
 
+
 app = Flask(__name__)
 app.debug = DEBUG
+db = SQLAlchemy()
+
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://{u}:{p}@{h}/{db}'.format(u=MYSQL_USER,
+                                                                          p=MYSQL_PASSWORD,
+                                                                          h=MYSQL_HOST,
+                                                                          db=MYSQL_BASE)
+                                        
+
+migrate = Migrate(app, db)
+manager = Manager(app)
+db.init(app)
+manager.add_command('db', MigrateCommand)
+
 
 @app.route("/")
 def index():
