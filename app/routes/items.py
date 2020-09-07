@@ -12,3 +12,4 @@ def items_by_name(name):
     items = ItemsService()
     data = items.item_by_name(name=name)
     return jsonify(data=data)
+

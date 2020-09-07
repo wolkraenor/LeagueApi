@@ -11,6 +11,5 @@ def user():
 
 @app.routes("/users", methods=['GET'])
 def store_user():
-    params
     users = UsersService()
     return users.create_user(request_data)
