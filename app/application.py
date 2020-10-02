@@ -6,7 +6,7 @@ from app.services.champions import ChampionsService
 from app.services.items import ItemsService
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
-from . import routes
+from app.routes import champions, items, users
 
 
 app = Flask(__name__)

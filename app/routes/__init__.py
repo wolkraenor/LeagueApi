@@ -1,4 +1,6 @@
-from . import app
+from app.__init__ import app
+from app.settings import APP_NAME, APP_VERSION
+
 
 @app.route("/")
 def index():

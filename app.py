@@ -1,4 +1,4 @@
-from app.views import app
+from ..LeagueApi import app
 from app.settings import APP_PORT
 
 if __name__ == "__main__":
